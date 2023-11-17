@@ -1,0 +1,14 @@
+development:
+  adapter: async
+
+test:
+  adapter: test
+
+production:
+  adapter: redis
+  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+<<<<<<< HEAD
+  channel_prefix: poster_production
+=======
+  channel_prefix: app_name_production
+>>>>>>> 2016ca9769d299d7f3267dd7bdb8c6230cafbbaf
